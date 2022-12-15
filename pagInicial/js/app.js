@@ -23,7 +23,7 @@ boton1.addEventListener('click', function(){
         }else{
             localStorage.setItem('Nombre', '¿Cómo estás?');
         }
-        location.href = 'inicio/inicio.html';
+        location.href = 'Inicio/inicio.html';
         
     }, 1000*1);
         
