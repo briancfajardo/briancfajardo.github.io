@@ -1,0 +1,152 @@
+#cuerpo-config
+{
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+#texto-cuerpo
+{
+    font-size: 2em;
+    padding: 1.5em;
+    transition: 0.5s;
+}
+#texto-cuerpo.modo-claro>p
+{
+    color: #494949;
+}
+#configuracion
+{
+    margin: 0;
+    margin-left: 0.5em;
+    color: rgb(218, 218, 218);
+    text-transform: uppercase;
+
+}
+#contenido-config
+{
+    display: flex;
+    border-radius: 5px;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 10px rgb(218, 218, 218);
+    transition: 0.5s;
+
+}
+#contenido-config.modo-claro
+{
+    box-shadow: 0 0 10px #6e6e6e;
+}
+.seccion-color
+{
+    background: rgb(66, 66, 66);
+    border-radius: 5px;
+    width: 30%;
+    margin: 0.7em;
+    transition: 0.5s;
+}
+#seccion-color-principal.modo-claro
+{
+    background: #c0c0c0;
+    transition: 0.5s;
+}
+#seccion-color-secundario.modo-claro
+{
+    background: #c0c0c0;
+    transition: 0.5s;
+}
+.seleccion-color
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    transition: 0.5s;
+}
+#texto-seleccion-color
+{
+    margin: 0;
+    margin-left: 0.5em;
+    text-align: center;
+    text-justify: center;
+    color: rgb(218, 218, 218);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#texto-seleccion-color.modo-claro
+{
+    color: #494949;
+}
+.seleccion-color ul
+{
+    list-style: none;
+    padding: 24px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.seleccion-color ul li
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--clr);
+    transition: 0.5;
+}
+
+.seleccion-color ul li:hover
+{
+    transform: scale(1.5);
+}
+
+.seleccion-color>ul>.color-seleccionado
+{
+    transform: scale(1.5);
+    
+}
+
+
+#seccion-cambio-nombre
+{
+    width: 30%;
+    margin: 0.7em;
+    background: rgb(66, 66, 66);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+#seccion-cambio-nombre.modo-claro
+{
+    background: #c0c0c0;
+}
+#cuestionario-nombre{
+    width: 100%;
+}
+label
+{
+    
+    width: 80%;
+    margin: 0;
+    margin-left: 0.5em;
+    color: rgb(218, 218, 218);
+    transition: 0.5s;
+}
+label.modo-claro
+{
+    color: #494949;
+}
+input
+{
+    width: 80%;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+}

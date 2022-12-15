@@ -1,0 +1,89 @@
+#cuerpo
+{
+    padding: 0;
+}
+#texto-cuerpo
+{
+    font-size: 3em;
+}
+#texto-cuerpo>p
+{
+    margin: 0;
+    margin-left: 0.5em;
+    color: #dadada;
+    transition: 0.5s;
+}
+#texto-cuerpo.modo-claro>p
+{
+    color: #494949;
+}
+#grilla-artistas
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.tarjeta-artista> img
+{
+    border-radius: 5px 5px 0px 0px;
+        
+}
+.tarjeta-artista>p
+{
+    margin: 0;
+    margin-bottom: 7px;
+}
+.tarjeta-artista
+{
+    
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    border-radius: 5px;
+    background: #c0c0c0;
+    box-shadow: 10px 10px 10px var(--clrP);
+    transition: 0.5s;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    align-self: start;
+
+}
+
+.tarjeta-artista:hover
+{
+    transform: translateY(-15px);
+    box-shadow: -10px 10px 2px var(--clrS);
+    cursor: pointer;
+}
+#representacion-img
+{
+    display: flex;
+    height: 500px;
+    width: 400%;
+    font-size: 2em;
+    color: #999;
+    text-align: justify;
+}
+#grilla-artistas.modo-claro>div>p
+{
+    color: #494949;
+}
+#representacion-img > img
+{
+    display: flex;
+    border-radius: 10px;
+    transition: 1s;
+    width: auto;
+}
+#representacion-img > img:hover{
+    border-radius: 50%;
+}
+#descripcion-img
+{
+    display: flex;
+    margin-left: 40px;
+    width: 300px;
+}

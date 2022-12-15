@@ -1,0 +1,272 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body.modo-oscuro{
+    background: #2b2b2b;
+    transition: 0.5s;
+    margin: 0;
+    transition: 0.5s;
+}
+body.modo-claro{
+    background: #f8f8f8;
+    transition: 0.5s;
+}
+header {
+    font-weight: 400;
+    color: #999;
+    
+    background: rgb(56, 56, 56);
+    height: 80px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+#contenido {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+header.modo-claro
+{
+    background: #dadada;
+}
+#tituloInicial.modo-oscuro{
+    color: #f8f8f8;
+    font-size: 3em;
+    font-weight: 300;
+    text-shadow: 0px 5px 10px #cf1a1a5b;
+    transition: 0.5s;
+}
+#tu-arte
+{
+    margin: 0;
+    cursor: pointer;
+}
+
+#tituloInicial.modo-oscuro:hover{
+    text-shadow: 0 2px 0 rgba(21, 255, 0, 0.502);
+    transition: 0.5s;
+}
+#tituloInicial.modo-claro{
+    color: #242424;
+    text-align: center;
+    font-weight: 300;
+    text-shadow: 0px 10px 15px rgba(21, 255, 0, 0.5);
+}
+
+#tituloInicial.modo-claro:hover{
+    text-shadow: 0 5px 0 rgba(207, 26, 26, 0.356);
+    transition: 0.5s;
+}
+
+#secciones-barra
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 60px;
+}
+#secciones-barra :nth-child(2)
+{
+    min-width: 100px;
+}
+#secciones
+{
+    position: relative;
+    width: 100%;
+    margin-left: 50px;
+    
+}
+#secciones > li
+{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    width: 60px;
+    background: #444;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+#secciones.modo-claro > li
+{
+    background: #bbbbbb;
+}
+#secciones > li:hover
+{
+    background: var(--f);
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+
+#secciones > li::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -20px;
+    width: 20px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+#secciones.modo-claro > li::before
+{
+    background: #505050;
+}
+#secciones > li:hover:before
+{
+    background: var(--b);
+}
+#secciones > li::after
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+#secciones.modo-claro > li::after
+{
+    background: #818181;
+}
+
+#secciones > li:hover:after
+{
+    background: var(--a);
+    transition: 0.5s;
+}
+#secciones > li a
+{
+    text-decoration: none;
+    color: #999;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+#secciones.modo-claro > li a
+{
+    color: #313131;
+}
+#secciones > li.activo
+{
+    background: var(--f);
+    transform: translateY(20px);
+}
+
+#secciones > li.activo a
+{
+    color: rgb(255, 255, 255);
+}
+
+#secciones > li.activo:after
+{
+    background: var(--a);
+}
+
+#secciones > li.activo:before
+{
+    background: var(--b);
+}
+
+#secciones > li:hover a
+{
+    color: rgb(255, 255, 255);
+}
+#saludo{
+    margin-right: 150px;
+    font-size: 1.5em;
+    color: var(--clr);
+    
+}
+
+#toggle
+{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background: #222;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1),;
+        
+}
+
+#toggle.modo-claro 
+{
+    background: rgb(221, 221, 221);
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+}
+
+#toggle .indicator
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to botton, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+#toggle.modo-claro .indicator
+{
+    left: 50px;
+    background: linear-gradient(to botton, #eaeaea, #f9f9f9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+                inset 0 4px 4px rgba(255, 255, 255, 1),
+                inset 0 -4px 4px rgba(255, 255, 255, 1);
+}
+
+.transformacion
+{
+    animation: smoke 1s linear forwards;
+    
+}
+@keyframes smoke {
+    0%
+    {
+        opacity: 0;
+        filter: blur(40px);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(0.1);
+        pointer-events: none;
+
+    }
+    50%
+    {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+    100%
+    {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+
+    }
+}

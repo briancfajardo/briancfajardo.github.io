@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tu Arte</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,00' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700" />
+        <link href="../Inicio/view/css/top.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="modo-oscuro">
+        <header>
+            <div id="contenido">
+                <div class="modo-oscuro" id="tituloInicial">
+                    <p id="tu-arte">Tu Arte</p>
+                </div>
+                <div id="secciones-barra">
+                    <ul id="secciones">
+                        <li style="--i:3;"><a style="cursor: pointer;" href='../Inicio/inicio.html'>Inicio</a></li>
+                        <li style="--i:2;"><a style="cursor: pointer;" href="../configuracion/configuracion.html">Configuración</a></li>
+                        <li style="--i:1;" class='activo'><a style="cursor: pointer;" href=''>About</a></li>
+                    </ul>
+                </div>
+                <div id="saludo">
+                    <p id="nombreP"></p>
+                </div>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+        </header>
+        <div id="cuerpo">
+            <div id="primera-seccion">
+                <div id="seccion-titulo">
+                    <p id="titulo-about">About</p>
+                </div>
+                <div id="seccion-descripcion-pagina">
+                    <p id="descripcion-pagina">
+                        Tu arte es una galería de arte en 
+                        donde el usuario que la visita puede ver distintos 
+                        artistas y las diferentes obras con su nombre y
+                         una breve descripción que estos tienen publicadas,
+                        además está pensada para que se sienta cómodo el 
+                        usuario tanto con un modo claro/oscuro como 
+                        con una variedad de colores que puede cambiar 
+                        en el momento que desee asiendo así que los 
+                        colores principales y secundarios que predominan 
+                        sean los de su preferencia, también cuenta con la 
+                        posibilidad de cambiar un mensaje de bienvenida 
+                        que está presente en todo momento para hacer de 
+                        la experiencia más inmersiva y amigable.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div id="seccion-autor">
+                <img id="imagen-camilo-fajardo" src="../imgArte/CamiloFajardo/fotoCamiloFajardo.png">
+                <div id="descipcion-autor">
+                    <p id="seccion-titulo">Brian Camilo Fajardo Sánchez</p>
+                    <div id="descipcion-links">
+                        <div id="descripcion">
+                            <p id="descripcion-camilo-fajardo">
+                                Estudiante de Ingeniería de sistemas de sexto semestre de la universidad Escuela Colombiana de
+                                Ingeniería Julio Garavito, artista de pasatiempo, amante de los animales y videojuegos.
+                            </p>
+                        </div>
+                        <ul id="lista-links">
+                            <li><a href="https://www.instagram.com/briancamilo.fajardosanchez/">Instagram</a></li>
+                            <li><a href="https://github.com/briancfajardo">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/darkMode.js"></script>
+    </body>
+</html>

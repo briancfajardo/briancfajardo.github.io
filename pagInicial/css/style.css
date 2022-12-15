@@ -1,0 +1,198 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body.modo-oscuro{
+    background: #2b2b2b;
+    transition: 0.5s;
+}
+body.modo-claro{
+    background: #f8f8f8;
+}
+#tituloInicial.modo-oscuro{
+    color: white;
+    text-align: center;
+    font-size: 9em;
+    font-weight: 300;
+    text-shadow: 0px 10px 15px rgba(207, 26, 26, 0.356);
+    transition: 0.5s;
+}
+#tituloInicial.modo-oscuro:hover{
+    text-shadow: 0 5px 0 rgba(21, 255, 0, 0.5);
+    transition: 0.5s;
+}
+#tituloInicial.modo-claro{
+    color: #242424;
+    text-align: center;
+    font-size: 9em;
+    font-weight: 300;
+    text-shadow: 0px 10px 15px rgba(21, 255, 0, 0.5);
+}
+
+#tituloInicial.modo-claro:hover{
+    text-shadow: 0 5px 0 rgba(207, 26, 26, 0.356);
+    transition: 0.5s;
+}
+
+#boton-iniciar.modo-oscuro{
+    margin-top: 3em;
+
+    width: 10%;
+
+    font-size: 1em;
+    text-align: center;
+
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 15px 0px rgba(207, 26, 26, 0.356);
+    border-radius:4px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#boton-iniciar:hover{
+    background-color: rgb(78, 216, 89);
+    box-shadow: 5px 5px 0px 0px rgba(21, 255, 0, 0.5);
+    color: white;
+}
+
+#boton-iniciar.modo-claro
+{
+    box-shadow: 5px 10px 15px 0px rgba(21, 255, 0, 0.5);
+}
+
+#boton-iniciar.modo-claro:hover{
+    background-color: rgb(216, 78, 78);
+    box-shadow: 5px 5px 0px 0px rgba(207, 26, 26, 0.356);
+    color: white;
+}
+
+#titulo-nombre{
+    align-items: center;
+    bottom: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}   
+input{
+    
+    font-size: 15px;
+    font-family: inherit;
+    text-align: center;
+    outline: none;
+
+    transition: 0.5s;
+
+    padding: 20px 20px 20px 40px;
+
+    border-radius: 50%;
+    border: 3px;
+    box-shadow: 0px 10px 15px 0px rgba(207, 26, 26, 0.356);
+    
+}
+input:hover
+{
+    box-shadow: 0px 5px 0px 0px rgba(21, 255, 0, 0.5);
+}
+input.modo-claro
+{
+    box-shadow: 0px 5px 15px 0px rgba(21, 255, 0, 0.5);
+}
+
+input.modo-claro:hover
+{
+    box-shadow: 0px 5px 0px 0px rgba(207, 26, 26, 0.356);
+}
+
+footer {
+    display: block;
+    margin-top: 7em;
+}
+#autor {  
+    color: #707070;
+    font-size: 16px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.623);
+    text-align: center;
+}
+
+#toggle
+{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background: #222;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1),;
+    
+}
+
+#toggle.modo-claro 
+{
+    background: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+}
+
+#toggle .indicator
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to botton, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+#toggle.modo-claro .indicator
+{
+    left: 50px;
+    background: linear-gradient(to botton, #eaeaea, #f9f9f9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+                inset 0 4px 4px rgba(255, 255, 255, 1),
+                inset 0 -4px 4px rgba(255, 255, 255, 1);
+}
+
+.transformacion
+{
+    animation: smoke 1s linear forwards;
+    transform-origin: bottom;
+}
+@keyframes smoke {
+    0%
+    {
+        opacity: 0.5;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        pointer-events: none;
+    }
+    50%
+    {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+    100%
+    {
+        opacity: 0;
+        filter: blur(40px);
+        transform: translateX(300px) translateY(-300px) rotate(0deg) scale(0.1);
+        pointer-events: none;
+
+    }
+}

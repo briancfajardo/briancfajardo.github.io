@@ -1,0 +1,67 @@
+#barra-autores{
+    background: #383838;
+    height: 600px;
+    transition: 0.5s;
+        
+}
+#barra-autores.modo-claro
+{
+    background: #dadada;
+}
+#lista-autores
+{
+    position: relative;
+    display: flex;
+    top: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+#lista-autores>li
+{
+    list-style: none;
+    position: relative;
+    
+}
+#lista-autores>li>a
+{
+    position: relative;
+    font-size: 1.6em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+    transition: 0.5s;
+}
+#lista-autores.modo-claro>li>a
+{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.719);
+}
+#lista-autores>li>a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0%;
+    
+    overflow: hidden;
+    transition: 1s;
+    border-right: 2px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+#lista-autores>li>a:hover:before
+{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+#lista-autores>li>a.seleccion:before
+{
+    width: 100%;
+    color: var(--j);
+    border-right: 2px solid var(--j);
+    filter: drop-shadow(0 0 25px var(--j));
+    -webkit-text-stroke: 1px var(--j);
+}

@@ -1,0 +1,1 @@
+Para iniciar el proyecto, el index.html

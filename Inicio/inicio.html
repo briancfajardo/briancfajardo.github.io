@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tu Arte</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,00' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700" />
+        <link href="view/css/top.css" rel="stylesheet">
+        <link href="view/css/cuerpo.css" rel="stylesheet">
+        <link href="view/css/barraAutores.css" rel="stylesheet">
+    </head>
+    <body class="modo-oscuro">
+        <header>
+            <div id="contenido">
+                <div class="modo-oscuro" id="tituloInicial">
+                    <p id="tu-arte">Tu Arte</p>
+                </div>
+                <div id="secciones-barra">
+                    <ul id="secciones">
+                        <li style="--i:3;" class="activo"><a id="seccion" style="cursor: pointer;">Inicio</a></li>
+                        <li style="--i:2;"><a id="seccion" style="cursor: pointer;" href='../configuracion/configuracion.html'>Configuración</a></li>
+                        <li style="--i:1;"><a id="seccion" style="cursor: pointer;" href='../about/about.html'>About</a></li>
+                    </ul>
+                </div>
+                <div id="saludo">
+                    <p id="nombreP"></p>
+                </div>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+        </header>
+        <div id="cuerpo-pagina" style="display: grid;grid-template-columns:20% 80%;">
+            <div id="barra-autores">
+                <ul id="lista-autores">
+                    <li id='Artistas' style='--clr:rgb(0, 173, 225); --j:#00ade1;'><a class="seleccion" data-text="&nbsp;Artistas">&nbsp;Artistas&nbsp;</a></li>
+                    <!--<li style="--clr:#ff6493"><a href="#" data-text="&nbsp;Camilo&nbsp;Fajardo">&nbsp;Camilo&nbsp;Fajardo&nbsp;</a></li>-->
+                </ul>
+            </div>
+            <div id="cuerpo">
+                <div id="texto-cuerpo">
+                    <p id="artista-actual">Artistas</p>
+                </div>
+                <div id="grilla-artistas">
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="model/app.js"></script>
+        <script src="view/js/app.js"></script>
+        <script src="octopus/app.js"></script>
+        <script src="view/js/darkMode.js"></script>
+    </body>
+</html>

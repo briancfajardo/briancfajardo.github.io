@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tu Arte</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,00' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700" />
+        <link href="../Inicio/view/css/top.css" rel="stylesheet">
+        <link href="view/css/style.css" rel="stylesheet">
+    </head>
+    <body class="modo-oscuro">
+        <header>
+            <div id="contenido">
+                <div class="modo-oscuro" id="tituloInicial">
+                    <p id="tu-arte">Tu Arte</p>
+                </div>
+                <div id="secciones-barra">
+                    <ul id="secciones">
+                        <li style="--i:3;"><a style="cursor: pointer;" href='../Inicio/inicio.html'>Inicio</a></li>
+                        <li style="--i:2;" class='activo'><a style="cursor: pointer;">Configuración</a></li>
+                        <li style="--i:1;"><a style="cursor: pointer;" href='../about/about.html'>About</a></li>
+                    </ul>
+                </div>
+                <div id="saludo">
+                    <p id="nombreP"></p>
+                </div>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+        </header>
+        <div id="cuerpo-config">
+            <div id="texto-cuerpo">
+                <p id="configuracion">Configuración</p>
+            </div>
+            <div id="contenido-config">
+                <div class="seccion-color" id="seccion-color-principal">
+                    <p id="texto-seleccion-color">Color principal</p>
+                    <div class="seleccion-color" id="seleccion-color-principal">
+                        <ul>
+                            <li class='color-item'  style="--clr:#ff6493"></li>
+                            <li class='color-item'  style="--clr:#11ca00"></li>
+                            <li class='color-item'  style="--clr:#e68c37"></li>
+                            <li class='color-item'  style="--clr:#FFAD00"></li>
+                            <li class='color-item'  style="--clr:#00ade1"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seccion-color" id="seccion-color-secundario">
+                    <p id="texto-seleccion-color">Color secundario</p>
+                    <div class="seleccion-color" id="seleccion-color-secundario">
+                        <ul>
+                            <li class='color-item'  style="--clr:#ff6493"></li>
+                            <li class='color-item'  style="--clr:#11ca00"></li>
+                            <li class='color-item'  style="--clr:#e68c37"></li>
+                            <li class='color-item'  style="--clr:#FFAD00"></li>
+                            <li class='color-item'  style="--clr:#00ade1"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="seccion-cambio-nombre">
+                    <form class="cuestionario" id="cuestionario-nombre">
+                        <label for="cambio-nombre">Nuevo nombre:</label>
+                        <input type='text' id="cambio-nombre" placeholder="Cambia tu nombre aqui">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="model/app.js"></script>
+        <script src="view/js/app.js"></script>
+        <script src="octopus/app.js"></script>
+        <script src="view/js/darkMode.js"></script>
+    </body>
+</html>

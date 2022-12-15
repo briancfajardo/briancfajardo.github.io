@@ -1,0 +1,89 @@
+#cuerpo
+{
+    display: grid;
+    grid-template-rows: 47% 50%;
+    font-size: 1.5em;
+    color: #999;
+    transition: 0.5s;
+    
+}
+#cuerpo.modo-claro
+{
+    color: #494949;
+}
+#seccion-titulo
+{
+    font-size: 2em;
+    color: #c2c2c2;
+    margin: 0;
+    transition: 0.5s;
+}
+#seccion-titulo.modo-claro
+{
+    color: #494949;
+}
+#primera-seccion
+{
+    margin: 0.2em 1em 0.5em 1em;
+    background: #424242;
+    border-radius: 5px;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+#primera-seccion.modo-claro
+{
+    background: #c0c0c0;
+}
+#titulo-about
+{
+    margin: 0;
+    
+}
+#seccion-descripcion-pagina
+{
+    text-align: justify;
+    width: 95%;
+}
+#seccion-autor
+{
+    display: grid;
+    margin: 0 1em 0 1em;
+    grid-template-columns: 30% 70%;
+    background: #424242;
+    padding: 0.4em;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#seccion-autor.modo-claro
+{
+    background: #c0c0c0;
+}
+img
+{
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    border-radius: 5px;
+    
+}
+
+#descipcion-links
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#descripcion
+{
+    text-align: justify;
+}
+#lista-links
+{
+    justify-self: center;
+}
+
+#lista-links>li a
+{
+    text-decoration: none;
+    color: rgb(58, 110, 141);
+}
