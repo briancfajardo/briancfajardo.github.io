@@ -273,10 +273,10 @@ p
 {
     color: #03a9f4;
     font-size: 18px;
-    width: 20px;
+    width: 30px;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 1100px)
 {
     .container
     {
