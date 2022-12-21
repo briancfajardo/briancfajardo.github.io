@@ -109,7 +109,7 @@ body
     position: relative;
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
+    
 }
 
 .contactInfo ul li .icon
@@ -131,11 +131,13 @@ body
     text-decoration: none;
     color: #fff;
     font-weight: 300;
+    text-decoration-line: underline;
 }
 
 .contactInfo ul li span a:hover
 {
     color: #03a9f4;
+    
 }
 
 .contactInfo.education li
@@ -149,8 +151,22 @@ body
     font-weight: 500;
 }
 
+.contactInfo.education h4 a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.contactInfo.education h4 a:hover
+{
+    color: #03a9f4;
+}
+
 .contactInfo.education h4:nth-child(2)
 {
+    text-decoration: none;
     color: #fff;
     font-weight: 500;
 }
@@ -233,6 +249,11 @@ p
     font-size: 16px;
 }
 
+.about .box .text h4 a
+{
+    color: #2a7da2;
+}
+
 .skills .box
 {
     position: relative;
@@ -267,6 +288,12 @@ p
     background: #03a9f4;
 }
 
+.references
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 .interest ul
 {
     display: grid;
@@ -288,7 +315,7 @@ p
     width: 30px;
 }
 
-@media (max-width: 1100px)
+@media (max-width: 1000px)
 {
     .container
     {
@@ -299,15 +326,19 @@ p
     {
         grid-template-columns: repeat(2,1fr);
     }
+    .about .box .year_proyect
+    {
+        min-width: 300px;
+    }
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
     .about .box
     {
         flex-direction: column;
     }
-
+    
     .about .box .year_proyect
     {
         margin-bottom: 5px;
@@ -318,6 +349,10 @@ p
         grid-template-columns: repeat(1,1fr);
     }
     .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .references
     {
         grid-template-columns: repeat(1,1fr);
     }
