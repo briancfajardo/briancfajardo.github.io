@@ -1,3 +1,7 @@
+/**
+ * Obtención de elementos que serán cambiados de modo
+ */
+
 const body = document.querySelector('body');
 const cuerpo = document.querySelector('#cuerpo');
 const header = document.querySelector('header');
@@ -8,7 +12,10 @@ const seccionAutor = document.querySelector('#seccion-autor');
 const seccionesTitulo = document.querySelectorAll('#seccion-titulo');
 
 const toggle = document.getElementById('toggle');
-
+/**
+ * Función que cambia la clase de modo claro a modo oscuro o al revés para que se cambien
+ * los estilos 
+ */
 toggle.onclick = function(){
     toggle.classList.toggle('modo-claro');
     body.classList.toggle('modo-claro');
@@ -28,6 +35,9 @@ toggle.onclick = function(){
         localStorage.setItem('modo', 'oscuro');
     }
 }
+/**
+ * Validación del modo de la página
+ */
 if(localStorage.getItem('modo') === 'claro'){
     toggle.click();
 }

@@ -4,7 +4,12 @@ const input = document.querySelector('input');
 const toggle = document.getElementById('toggle');
 const titulo = document.getElementById('tituloInicial');
 const boton = document.getElementById('boton-iniciar');
+
 localStorage.setItem('modo', 'oscuro');
+/**
+ * Función que cambia la clase de modo claro a modo oscuro o al revés para que se cambien
+ * los estilos (Inicia en modo oscuro)
+ */
 toggle.onclick = function(){
     toggle.classList.toggle('modo-claro');
     body.classList.toggle('modo-claro');
