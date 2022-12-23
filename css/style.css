@@ -133,7 +133,11 @@ body
     font-weight: 300;
     text-decoration-line: underline;
 }
-
+.contactInfo ul li:nth-child(2) span a
+{
+    font-size: 11px;
+    
+}
 .contactInfo ul li span a:hover
 {
     color: #03a9f4;
